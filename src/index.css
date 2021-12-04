@@ -29,6 +29,7 @@ code {
     width:100%;
     display:flex;
     align-items: center;
+    align-content: flex-start;
 }
 
 #navbarBasicExample{
@@ -42,7 +43,92 @@ code {
   align-items: center;
 }
  a:hover{
-  background:rgb(170, 136, 168);
   border-radius:50px;
+}
+
+.column{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   
+}
+.des{
+  background-image: url('../src/imagenes/fondo1.png');
+  box-shadow: 100px 96px 95px -95px rgba(8, 8, 8, 0.65);
+  background-size:cover;
+}
+.titulo1{
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+.titulo2{
+  font-size: 1em;
+  font-weight: bolder;
+  color: white;
+}
+.parrafo1{
+  color: white;
+}
+
+
+.especialidades{
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-bottom:7%;
+  color:rgb(77, 53, 8);
+}
+.wrap{
+  display: flex;
+  justify-content: center;
+}
+.tarjeta-wrap{
+  margin:10px;
+  -webkit-perspective: 400;
+  perspective: 400;
+}
+.tarjeta{
+  width: 200px;
+  height: 250px;
+  background: #bb9755;
+  position: relative;
+  transform-style:preserve-3d;
+  box-shadow: -30px 30px 35px -35px rgba(8, 8, 8, 0.65);
+}
+.atras p{
+  padding: 20px 20px;
+}
+.adelante, .atras{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.atras{
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+}
+.tarjeta-wrap:hover .tarjeta{
+  transform: rotateY(180deg);
+}
+.tarjeta1{
+  background-image: url(../src/imagenes/tiradioAtun.jpg);
+  background-size:cover;
+}
+.tarjeta2{
+  background-image: url(../src/imagenes/tiradioAtun.jpg);
+  background-size:cover;
 }
