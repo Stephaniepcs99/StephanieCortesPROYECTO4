@@ -158,7 +158,6 @@ code {
   margin-right: 4px;
   margin-bottom: 10px;
   padding-top: 0%;
-  box-shadow: 100px 96px 95px -95px rgba(8, 8, 8, 0.65);
 }
 
 .formrev2{
@@ -179,5 +178,34 @@ code {
   display:flex;
     align-items: center;
     align-content:initial ;
-  
+}
+
+.iconSocial{
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social{
+  display: flex;
+    justify-content: center;
+}
+
+.icon-marg{
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.direccion{
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.foo{
+  background-color: rgba(41, 41, 41, 0.918);
+  height: 200px;
+  color: rgb(201, 195, 195);
 }
