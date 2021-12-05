@@ -5,6 +5,7 @@ import '../node_modules/bulma/css/bulma.css'
 //import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Header from './components/ind'
 import Main from './components/main'
+import ReservInd from './components/reserv_index'
 
 
 const Layout = () => {
@@ -12,6 +13,7 @@ const Layout = () => {
     <div>
       <Header/>
       <Main/>
+      <ReservInd/>
     </div>
   )
 }
