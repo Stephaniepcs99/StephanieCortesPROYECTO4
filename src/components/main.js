@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-const main = () => {
+const Main = () => {
     return (
-        <div className='columns'>
+        <div className='secmain columns'>
             <div className='des columMain column'>
                 <div>
                     <h1 className='titulo1 is-size-2' >La comida habla de nuestra cultura, herencia, raíces e influencias.</h1>
@@ -51,4 +51,4 @@ const main = () => {
     )
 }
 
-export default main
+export default Main
