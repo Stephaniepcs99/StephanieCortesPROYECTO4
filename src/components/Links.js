@@ -2,26 +2,36 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Switch, Route, LinkProps,Link } from 'react-router-dom'
 import Conocenos from '../pages/Conocemos'
+import Menu from '../pages/MenuPages'
+
+function desplegar() {
+  var x = document.getElementById("links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 const Enl = () => {
   return (
     <div>
       <Router>
       <div className="header">
-      <div className='navbar-brand'>
-              <a href='/' className='navbar-item'>
-                <img src='https://bulma.io/images/bulma-logo.png' width='112' height='28' alt='texto significativo' />
+
+            <div id='navbarBasicExample' className=' navbar-menu is-active'>
+            <div className='navbar-brand'>
+              <a href='/'>
+                <img className='' src='/images/logoca.png' width="98" height="58" alt='' />
               </a>
 
-              <a href='/' role='button' className='navbar-burger' aria-label='menu' aria-expanded='false' data-target='navbarBasicExample'>
-                <span aria-hidden='true'></span>
-                <span aria-hidden='true'></span>
-                <span aria-hidden='true'></span>
+              <a href='/' role='button' className='navbar-burger ' aria-label='menu' aria-expanded='false' data-target='navbarBasicExample' >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
             </div>
-
-            <div id='navbarBasicExample' className=' navbar-menu '>
-              <div className='navbar-end'>
+              <div className='navbar-end' id='links'>
                 <Link to="/conocenos" className='has-text-black navbar-item'>
                   Conocenos
                 </Link>
@@ -43,6 +53,7 @@ const Enl = () => {
             <Conocenos/>
           </Route>
           <Route path="/menu" >
+            <Menu/>
           </Route>
           <Route path="/reservaciones" >
           </Route>
