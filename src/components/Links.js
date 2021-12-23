@@ -3,6 +3,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Switch, Route, LinkProps,Link } from 'react-router-dom'
 import Conocenos from '../pages/Conocemos'
 import Menu from '../pages/MenuPages'
+import Reservacion from '../pages/ReservPages'
 
 function desplegar() {
   var x = document.getElementById("links");
@@ -56,6 +57,7 @@ const Enl = () => {
             <Menu/>
           </Route>
           <Route path="/reservaciones" >
+            <Reservacion/>
           </Route>
         </Switch>
       </Router>

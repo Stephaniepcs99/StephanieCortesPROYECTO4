@@ -28,8 +28,7 @@ const Main = () => {
                             <div className='adelante tarjeta1' > </div>
                             <div className='atras'>
                                 <p>
-                                    Este pastel lo tiene todo porque por supuesto va repleta de chocolate,
-                                    su textura cremosa es de lo más apetecible
+                                    No te quedes sin probar nuestras deliciosas carnes
                                 </p>
                             </div>
                         </div>
@@ -39,8 +38,7 @@ const Main = () => {
                             <div className='adelante tarjeta2'> </div>
                             <div className='atras'>
                                 <p>
-                                    Este pastel es una combinación deliciosa de base crujiente de galletas o
-                                    de masa brisa,con un relleno muy cremoso con sabor y aroma de limones frescos
+                                   ven y prueba nuestro delicioso Agua chile de Rib Eye
                                 </p>
                             </div>
                         </div>

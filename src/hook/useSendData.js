@@ -11,7 +11,7 @@ export const useSendData = (data) => {
   }
   
   //axios recibira de parametros la URL y el data (DONDE ESTAN LOS DATOS A CACHAR)
-  axios.post('http://localhost:5000/messages', data)
+  axios.post('http://localhost:5000/reserv', data)
   //Cuando termine lo anterior se enviara la respuesta  
   .then(response => {
       console.log(response);
